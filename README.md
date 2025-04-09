@@ -27,8 +27,314 @@ python main.py
 | **5. 哪些特定用例中 Milvus 的表现优于其他数据库？** | 本地信息显示，Milvus 非常适合处理大规模向量数据和复杂数据建模，在 AI 搜索和推荐系统等场景中具有明显优势。 | Web 结果进一步指出，Milvus 在高维向量检索、实时搜索以及大数据商业应用方面表现卓越，适合于对响应速度和数据规模要求较高的场景。 |
 | **6. 使用 Milvus 存在的局限或缺点是什么？** | 本地文档侧重于展示 Milvus 的优点，对局限性描述较少。 | Web 结果中则对 Milvus 的部署复杂性和维护挑战提出了讨论，提醒用户在特定场景下需权衡功能与成本。 |
 
+# 生成日志
+/opt/anaconda3/bin/python /Users/haoruo/Desktop/de%                      
+(base) haoruo@Haoruos-MacBook-Pro deepsearcher_demo % /opt/anaconda3/bin/python /Users/haoruo/Desktop/deepsearcher_demo/main.py
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+CropBox missing from /Page, defaulting to MediaBox
+
+================= Context Breakdown =================
+
+--- Sub-query 1: 1. What are the key features and capabilities of Milvus?
+Local:
+ What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+Web:
+ What is Milvus?
+GRADUATE PROJECT
+
+Milvus is an open-source vector database built to handle billions of vectors and powers the largest AI applications in the world.
+
+Created by
+Try Managed Milvus for Free
+Download Milvus
+Built on a vibrant and growing community
+
+34K+
+
+GitHub stars
+
+4,000+
+
+Community
+
+68M+
+
+Downloads
+
+300+
+
+Contributors
+
+How does Milvus work?
+Coordinator Services
+
+Orchestrate load balancing and data management through coordinators, ensuring efficient data, query, and index managem ...
+[Playwright Warning] Failed to extract from https://www.cloudraft.io/blog/top-5-vector-databases: Locator.inner_text: Error: strict mode violation: locator("main, article") resolved to 3 elements:
+    1) <main>…</main> aka get_by_role("main").filter(has_text="Top 5 Vector Databases in")
+    2) <article class="mdx prose mx-auto mt-4 w-full transition-colors dark:prose-invert">…</article> aka get_by_text("Introduction We are drowning")
+    3) <main class="layout flex flex-col items-center border-t pt-6 dark:border-gray-600">…</main> aka get_by_role("main").filter(has_text="Scale your business by")
+
+Call log:
+  - waiting for locator("main, article")
+
+
+--- Sub-query 2: 2. What other vector databases are available on the market?
+Local:
+ What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+Web:
+ (Failed to extract content) ...
+
+--- Sub-query 3: 3. How does Milvus compare to these other vector databases in terms of performance, scalability, and ease of use?
+Local:
+ What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+Web:
+ Milvus vs. Weaviate: The Battle of Open-Source Vector Databases
+Mon Mar 25 2024
+Vector Database
+Open Source
+
+#
+Introduction to Vector Databases
+
+In the realm of artificial intelligence (AI) applications, vectors play a pivotal role in enhancing machine learning algorithms' efficiency. These mathematical representations enable AI systems to comprehend and process complex data structures effectively. The management of these vectors is where databases step in, providing a structured environment for ...
+[Playwright Warning] Failed to extract from https://www.gitselect.com/post/milvus-vs-other-vector-databases: Locator.inner_text: Error: strict mode violation: locator("main, article") resolved to 7 elements:
+    1) <main tabindex="-1" id="PAGES_CONTAINER" class="PAGES_CONTAINER" data-main-content="true">…</main> aka locator("#PAGES_CONTAINER")
+    2) <article class="tgMH9T" data-hook="post">…</article> aka get_by_text("Milvus Vs Other Vector DatabasesGuest ContributorFeb 19, 20243 min readIn the")
+    3) <main class="VQDdIN" data-hook="post-description">…</main> aka get_by_role("article").filter(has_text="Milvus Vs Other Vector").get_by_role("main")
+    4) <main>…</main> aka locator("#content-wrapper").get_by_role("main").filter(has_text="Guide to Selecting the Best")
+    5) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="Guide to Selecting the Best")
+    6) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="What is Pinecone and when to")
+    7) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="What is Weaviate? Comparison")
+Call log:
+  - waiting for locator("main, article")
+
+
+--- Sub-query 4: 4. What are the specific use cases and industries where Milvus may have a competitive advantage over other vector databases?
+Local:
+ What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+Web:
+ (Failed to extract content) ...
+[Playwright Warning] Failed to extract from https://myscale.com/blog/pgvector-vs-milvus-choosing-right-vector-database: Locator.inner_text: Error: strict mode violation: locator("main, article") resolved to 4 elements:
+    1) <article itemscope="itemscope" itemtype="https://schema.org/BlogPosting">…</article> aka get_by_role("article").filter(has_text="pgvector vs Milvus: Choosing")
+    2) <article class="ui-post" itemprop="blogPost" itemscope="itemscope" itemtype="https://schema.org/BlogPosting">…</article> aka get_by_role("article").filter(has_text="SQL+Vector: Empowering GenAI")
+    3) <article class="ui-post" itemprop="blogPost" itemscope="itemscope" itemtype="https://schema.org/BlogPosting">…</article> aka get_by_role("article").filter(has_text="Working with Embedding Models")
+    4) <article class="ui-post" itemprop="blogPost" itemscope="itemscope" itemtype="https://schema.org/BlogPosting">…</article> aka get_by_role("article").filter(has_text="AutoGen vs LangChain: Which")
+Call log:
+  - waiting for locator("main, article")
+
+
+--- Sub-query 5: 5. Are there any notable drawbacks or limitations to using Milvus compared to other vector databases?
+Local:
+ What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+Web:
+ (Failed to extract content) ...
+
+================= Comparison Results =================
+
+Sub-question: What are the key features and capabilities of Milvus?
+== 本地结果 ==
+What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing hardware-aware code. Core contributors include professionals
+from Zilliz, ARM, NVIDIA, AMD, Intel, Meta, IBM, Salesforce, Alibaba, and Microsoft.
+Unstructured Data, Embeddings, and Milvus
+Unstructured data, such as text, images, and audio, varies in format and carries rich underlying semantics,
+making it challenging to analyze. To manage this complexity, embeddings are used to convert unstructured
+data into numerical vectors that capture its essential characteristics. These vectors are then stored in a
+vector database, enabling fast and scalable searches and analytics.
+Milvus offers robust data modeling capabilities, enabling you to organize your unstructured or multi-modal
+data into structured collections. It supports a wide range of data types for different attribute modeling,
+including common numerical and character types, various vector types, arrays, sets, and JSON, saving you
+from the effort of maintaining multiple database systems.
+Milvus offers three deployment modes, covering
+
+== Web结果 ==
+What is Milvus?
+GRADUATE PROJECT
+
+Milvus is an open-source vector database built to handle billions of vectors and powers the largest AI applications in the world.
+
+Created by
+Try Managed Milvus for Free
+Download Milvus
+Built on a vibrant and growing community
+
+34K+
+GitHub stars
+4,000+
+Community
+68M+
+Downloads
+300+
+Contributors
+How does Milvus work?
+Coordinator Services
+Orchestrate load balancing and data management through coordinators, ensuring efficient data, query, and index management.
+Access Layer
+Handles external requests using stateless proxies to manage connections, perform verifications, and balance load.
+Worker Nodes
+Executes tasks as scalable pods by implementing coordinator commands, enabling dynamic adjustment for changing data, query, and indexing demands.
+Storage Layer
+Ensures data persistence through three components: meta stores, log brokers and object storage.
+Why Milvus?
+Milvus is a cloud-native, open-source vector database powering Zilliz.
+Scale as needed
+Handles billions of vectors through its distributed architecture, separating storage and compute. Its microservice design allows scaling specific functions, optimizing resource use as you grow.
+Learn more
+High Performance
+Milvus offers diverse index types (HNSW, DiskANN, Quantization, Binary, etc.) and hardware-optimized designs for both CPU and GPU. This ensures fast vector retrieval with high recall across various use cases.
+Benchmark
+Full Lifecycle Support
+Milvus offers three deployment models with a unified API: Lite for prototyping, Standalone for testing and small-scale production, and Distributed for large-scale production—enabling seamless scaling without code rewrites.
+Learn more
+Feature Rich
+Supports multiple search types (top-K & Range ANN, sparse & dense, multi-vector, grouping), metadata filtering, and multi-tenancy. It includes admin tools and integrates with various AI tools and models.
+Explore Milvus Notebooks
+“
+Milvus is renowned as one of the most ad
+
+Sub-question: What other vector databases are available on the market?
+== 本地结果 ==
+What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing hardware-aware code. Core contributors include professionals
+from Zilliz, ARM, NVIDIA, AMD, Intel, Meta, IBM, Salesforce, Alibaba, and Microsoft.
+Unstructured Data, Embeddings, and Milvus
+Unstructured data, such as text, images, and audio, varies in format and carries rich underlying semantics,
+making it challenging to analyze. To manage this complexity, embeddings are used to convert unstructured
+data into numerical vectors that capture its essential characteristics. These vectors are then stored in a
+vector database, enabling fast and scalable searches and analytics.
+Milvus offers robust data modeling capabilities, enabling you to organize your unstructured or multi-modal
+data into structured collections. It supports a wide range of data types for different attribute modeling,
+including common numerical and character types, various vector types, arrays, sets, and JSON, saving you
+from the effort of maintaining multiple database systems.
+Milvus offers three deployment modes, covering
+
+== Web结果 ==
+(Failed to extract content)
+
+Sub-question: How does Milvus compare to these other vector databases in terms of performance, scalability, and ease of use?
+== 本地结果 ==
+What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing hardware-aware code. Core contributors include professionals
+from Zilliz, ARM, NVIDIA, AMD, Intel, Meta, IBM, Salesforce, Alibaba, and Microsoft.
+Unstructured Data, Embeddings, and Milvus
+Unstructured data, such as text, images, and audio, varies in format and carries rich underlying semantics,
+making it challenging to analyze. To manage this complexity, embeddings are used to convert unstructured
+data into numerical vectors that capture its essential characteristics. These vectors are then stored in a
+vector database, enabling fast and scalable searches and analytics.
+Milvus offers robust data modeling capabilities, enabling you to organize your unstructured or multi-modal
+data into structured collections. It supports a wide range of data types for different attribute modeling,
+including common numerical and character types, various vector types, arrays, sets, and JSON, saving you
+from the effort of maintaining multiple database systems.
+Milvus offers three deployment modes, covering
+
+== Web结果 ==
+Milvus vs. Weaviate: The Battle of Open-Source Vector Databases
+Mon Mar 25 2024
+Vector Database
+Open Source
+#
+Introduction to Vector Databases
+In the realm of artificial intelligence (AI) applications, vectors play a pivotal role in enhancing machine learning algorithms' efficiency. These mathematical representations enable AI systems to comprehend and process complex data structures effectively. The management of these vectors is where databases step in, providing a structured environment for storing and retrieving these crucial elements.
+[Playwright Warning] Failed to extract from https://www.gitselect.com/post/milvus-vs-other-vector-databases: Locator.inner_text: Error: strict mode violation: locator("main, article") resolved to 7 elements:
+    1) <main tabindex="-1" id="PAGES_CONTAINER" class="PAGES_CONTAINER" data-main-content="true">…</main> aka locator("#PAGES_CONTAINER")
+    2) <article class="tgMH9T" data-hook="post">…</article> aka get_by_text("Milvus Vs Other Vector DatabasesGuest ContributorFeb 19, 20243 min readIn the")
+    3) <main class="VQDdIN" data-hook="post-description">…</main> aka get_by_role("article").filter(has_text="Milvus Vs Other Vector").get_by_role("main")
+    4) <main>…</main> aka locator("#content-wrapper").get_by_role("main").filter(has_text="Guide to Selecting the Best")
+    5) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="Guide to Selecting the Best")
+    6) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="What is Pinecone and when to")
+    7) <article class="qbu2Gh" data-hook="recent-post-list-item">…</article> aka get_by_role("article").filter(has_text="What is Weaviate? Comparison")
+Call log:
+  - waiting for locator("main, article")
+
+--- Sub-question: What are the specific use cases and industries where Milvus may have a competitive advantage over other vector databases?
+== 本地结果 ==
+What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+== Web结果 ==
+(Failed to extract content)
+
+--- Sub-question: Are there any notable drawbacks or limitations to using Milvus compared to other vector databases?
+== 本地结果 ==
+What is Milvus?
+Milvus is a high-performance, highly scalable vector database that runs efficiently across a wide range of
+environments, from a laptop to large-scale distributed systems. It is available as both open-source software
+and a cloud service.
+Milvus is an open-source project under LF AI & Data Foundation distributed under the Apache 2.0 license.
+Most contributors are experts from the high-performance computing (HPC) community, specializing in
+building large-scale systems and optimizing ...
+== Web结果 ==
+(Failed to extract content)
+
+<Query> Write a report comparing Milvus with other vector databases.
+<Sub-queries> ['1. What are the key features and capabilities of Milvus?', '2. What other vector databases are available on the market?', '3. How does Milvus compare to these other vector databases in terms of performance, scalability, and ease of use?', '4. What are the specific use cases and industries where Milvus may have a competitive advantage over other vector databases?', '5. Are there any notable drawbacks or limitations to using Milvus compared to other vector databases?']
+<Reflection> Information is sufficient.
+<Final Answer> Milvus is a high-performance, highly scalable vector database that offers robust data modeling capabilities and supports various data types for different attribute modeling. It provides efficient storage and retrieval of numerical vectors, making it ideal for managing unstructured data such as text, images, and audio.
+
+In comparison to other vector databases, such as Weaviate, Milvus stands out for its diverse index types, hardware-optimized designs for both CPU and GPU, and support for multiple search types. Milvus also offers a unified API for deployment across different modes, allowing seamless scaling without code rewrites.
+
+While both Milvus and Weaviate are open-source vector databases, Milvus excels in its ability to handle billions of vectors through its distributed architecture, separating storage and compute. Additionally, Milvus's feature-rich environment includes admin tools and integration with various AI tools and models, making it a comprehensive solution for large-scale AI applications.
+
+Overall, Milvus emerges as a powerful and versatile vector database, catering to the needs of modern AI applications with its high performance, scalability, and feature-rich environment.
+
 ## 使用说明
 
 - 本文内容可作为各向量数据库平台对比分析的参考依据，帮助企业或开发者在选择数据库产品时更直观地了解各自特点。
 - 本报告内容根据最新检索结果整理，数据及描述可能会随着技术更新而不断改进。
+- 
 
