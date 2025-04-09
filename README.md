@@ -332,9 +332,4 @@ While both Milvus and Weaviate are open-source vector databases, Milvus excels i
 
 Overall, Milvus emerges as a powerful and versatile vector database, catering to the needs of modern AI applications with its high performance, scalability, and feature-rich environment.
 
-## 使用说明
-
-- 本文内容可作为各向量数据库平台对比分析的参考依据，帮助企业或开发者在选择数据库产品时更直观地了解各自特点。
-- 本报告内容根据最新检索结果整理，数据及描述可能会随着技术更新而不断改进。
-- 
 
