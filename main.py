@@ -5,6 +5,7 @@ import numpy as np
 import requests
 from dotenv import load_dotenv
 
+
 # 加载环境变量（确保 .env 文件中正确配置了 EXA_API_KEY 和 OPENAI_API_KEY）
 load_dotenv()
 EXA_API_KEY = os.getenv("EXA_API_KEY")
@@ -36,42 +37,67 @@ def cosine_similarity(vec1, vec2):
     v1, v2 = np.array(vec1), np.array(vec2)
     return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
 
+import pandas as pd
+
+from playwright.sync_api import sync_playwright
+
+def extract_article_text_playwright(url):
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url, timeout=15000)
+            page.wait_for_load_state("domcontentloaded")
+            
+            # 提取 <main>、<article>、<p> 标签下的正文
+            content = page.locator("main, article").inner_text(timeout=3000) \
+                if page.locator("main, article").count() > 0 else ""
+
+            if not content:
+                # 如果 main/article 取不到，则取所有段落
+                content = "\n".join([p.inner_text() for p in page.locator("p").all()])
+
+            browser.close()
+            return content.strip()[:2000] if content else "(No extracted content)"
+    except Exception as e:
+        print(f"[Playwright Warning] Failed to extract from {url}: {e}")
+        return "(Failed to extract content)"
+
+
 def search_exa(query, top_k=1):
-    """
-    调用 Exa API 进行 Web 搜索，并返回格式化后的结果字符串列表
-    """
-    print("Loaded EXA_API_KEY:", EXA_API_KEY)
-    
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {EXA_API_KEY}"
     }
-    
-    # 根据 Exa API 要求将 payload 放在顶层，字段包括：query, numResults, text
+
     payload = {
         "query": query,
         "numResults": top_k,
-        "text": "true"   # 若 API 要求布尔值，可修改为 True
+        "text": True
     }
-    
-    print("Headers:", headers)
-    print("Payload:", payload)
-    
+
     res = requests.post("https://api.exa.ai/search", json=payload, headers=headers)
-    print("Response:", res.text)
     res.raise_for_status()
-    
-    results = res.json().get("results", [])
-    formatted_results = []
-    
-    # 依次提取每个结果的标题、URL 以及 autopromptString（若有）
+    raw = res.json()
+
+    global_autoprompt = raw.get("autopromptString", "")
+    results = raw.get("results", [])
+
+    processed_results = []
     for r in results:
         title = r.get("title", "(No title)")
         url = r.get("url", "(No URL)")
-        autoprompt = r.get("autopromptString", "")
-        formatted_results.append(f"Title: {title}\nURL: {url}\nAutoprompt: {autoprompt}")
-        
-    return formatted_results
+        content = extract_article_text_playwright(url)
+        processed_results.append({
+            "title": title,
+            "url": url,
+            "autoprompt": global_autoprompt,
+            "content": content
+        })
+
+    return processed_results
+
+
 
 def process_query(query, documents, top_k_web=1):
     """
@@ -107,7 +133,7 @@ def process_query(query, documents, top_k_web=1):
         
         # Web 检索：调用 Exa API
         web_results = search_exa(q_clean, top_k=top_k_web)
-        web_text = "\n".join(web_results)
+        web_text = web_results[0]["content"] if web_results else "(No web result)"
         
         # 保存本地与 Web 检索结果到对比字典中
         comparison_results[q_clean] = {"local": local_text, "web": web_text}
